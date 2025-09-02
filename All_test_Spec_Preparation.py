@@ -66,8 +66,8 @@ test_definitions = {
             "Max Load (kgf)": {"type": "number", "value": 1.0},
             "Min Load (kgf)": {"type": "number", "value": 1.0},
             "Calibration factor": {
-                "type": "number", "value": 0.00054,
-                "step": 0.001, "format": "%.5f"
+                "type": "number", "value": float(0.00054),
+                "step": float(0.001), "format": "%.5f"
             },
             "Calibration constant": {"type": "number", "value": -1.356, "step": 0.001, "format": "%.5f"},
             "Material": {"type": "selectbox", "options": list(Material_detailes.keys())},
@@ -446,4 +446,5 @@ if 'last_calculation' in st.session_state:
 # === Footer ===
 st.markdown("---")
 st.markdown("*Built with ❤️ using Streamlit | Version 2.1 with Excel & PDF Export*")
+
 
