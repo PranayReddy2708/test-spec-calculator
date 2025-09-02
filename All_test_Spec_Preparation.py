@@ -67,6 +67,7 @@ test_definitions = {
             "Min Load (kgf)": {"type": "number", "value": 1.0},
             "Calibration factor": {
                 "type": "number", "value": float(0.00054),
+                "min_value": float(0.00001),
                 "step": float(0.001), "format": "%.5f"
             },
             "Calibration constant": {"type": "number", "value": -1.356, "step": 0.001, "format": "%.5f"},
@@ -446,5 +447,6 @@ if 'last_calculation' in st.session_state:
 # === Footer ===
 st.markdown("---")
 st.markdown("*Built with ❤️ using Streamlit | Version 2.1 with Excel & PDF Export*")
+
 
 
